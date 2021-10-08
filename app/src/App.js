@@ -12,8 +12,9 @@ function App(props) {
   // const error = "";
   const { loading, error, getGifs } = props;
 
+  // thunk
   useEffect(()=> {
-    getGifs();
+    getGifs('dogs');
     // props.fetchStart();
     // axios.get(`https://api.giphy.com/v1/gifs/search?api_key=eF68i1SpJhoVnYQRTDKYcXdtpZlGeJDP&q=cats`)
     // .then(res=>{
